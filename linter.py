@@ -21,7 +21,7 @@ class Bandit(PythonLinter):
     #executable = None
     version_args = '--version'
     version_re = r'^bandit\s(?P<version>\d+.\d+.\d)'
-    version_requirement = '>= 1.2'
+    version_requirement = '>= 1.3.0'
     regex = (
         r'^>>\sIssue:\s\[.+\]\s(?P<message>.+)$\r?\n'
         r'^.*$\r?\n'
