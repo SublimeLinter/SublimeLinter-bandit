@@ -29,3 +29,4 @@ class Bandit(PythonLinter):
     )
     multiline = True
     error_stream = util.STREAM_BOTH
+    config_file = ('--configfile', '.bandit')
