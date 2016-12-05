@@ -11,32 +11,21 @@
 """This module exports the Bandit plugin class."""
 
 from SublimeLinter.lint import PythonLinter
+from SublimeLinter.lint import util
 
 
 class Bandit(PythonLinter):
     """Provides an interface to bandit."""
 
     syntax = 'python'
-    cmd = ('bandit@python', '*', '-n 1', '-f txt', '-')
-    #executable = None
+    cmd = ('bandit@python', '*', '-n', '1', '-f', 'txt', '-')
     version_args = '--version'
     version_re = r'^bandit\s(?P<version>\d+.\d+.\d)'
     version_requirement = '>= 1.3.0'
     regex = (
         r'^>>\sIssue:\s\[.+\]\s(?P<message>.+)$\r?\n'
         r'^.*$\r?\n'
-        r'^.*$\r?\n'
-        r'^(?P<line>\d+)\s.*$\r?\n'
+        r'^.*Location:.*:(?P<line>\d+)$\r?\n'
     )
     multiline = True
-    #line_col_base = (1, 1)
-    #tempfile_suffix = None
     error_stream = util.STREAM_BOTH
-    #selectors = {}
-    #word_re = None
-    #defaults = {}
-    #inline_settings = None
-    #inline_overrides = None
-    #comment_re = None
-    #module = 'bandit'
-    #check_version = False
