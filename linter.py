@@ -20,7 +20,7 @@ class Bandit(PythonLinter):
     syntax = 'python'
     cmd = ('bandit@python', '*', '-n', '1', '-f', 'txt', '-')
     version_args = '--version'
-    version_re = r'^bandit\s(?P<version>\d+.\d+.\d)'
+    version_re = r'^bandit\s(?P<version>\d+.\d+.\d+)'
     version_requirement = '>= 1.3.0'
     regex = (
         r'^>>\sIssue:\s\[.+\]\s(?P<message>.+)$\r?\n'
@@ -29,4 +29,4 @@ class Bandit(PythonLinter):
     )
     multiline = True
     error_stream = util.STREAM_BOTH
-    config_file = ('--configfile', '.bandit')
+    config_file = ('--ini', '.bandit')

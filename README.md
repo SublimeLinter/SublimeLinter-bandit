@@ -42,7 +42,7 @@ In addition to the standard SublimeLinter settings, SublimeLinter-contrib-bandit
 
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
+|@python|A meta setting that indicates the python version of your source files. Use this inline or at the global level, not within the linter’s settings.|&#10003;| |
 |bar|Something else.| |&#10003;|
 
 ## Contributing
