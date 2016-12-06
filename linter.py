@@ -24,7 +24,7 @@ class Bandit(PythonLinter):
     version_requirement = '>= 1.3.0'
     regex = (
         r'^>>\sIssue:\s\[.+\]\s(?P<message>.+)$\r?\n'
-        r'^.*$\r?\n'
+        r'^.*Severity:\s(?:(?P<error>High)|(?P<warning>(Medium|Low))).*$\r?\n'
         r'^.*Location:.*:(?P<line>\d+)$\r?\n'
     )
     multiline = True
