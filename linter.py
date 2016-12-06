@@ -30,3 +30,8 @@ class Bandit(PythonLinter):
     multiline = True
     error_stream = util.STREAM_BOTH
     config_file = ('--ini', '.bandit')
+    defaults = {
+        '--tests,': '',
+        '--skips,': '',
+    }
+    inline_overrides = ('tests', 'skips')
