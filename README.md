@@ -1,7 +1,7 @@
-SublimeLinter-contrib-bandit
-============================
+SublimeLinter-bandit
+====================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-bandit.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-bandit)
+[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-bandit.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-bandit)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [bandit](https://wiki.openstack.org/wiki/Security/Projects/Bandit). It will be used with files that have the “python” syntax.
 
@@ -24,7 +24,7 @@ Before using this plugin, you must ensure that `bandit` is installed on your sys
 ### Linter configuration
 In order for `bandit` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
-Once you have installed and configured `bandit`, you can proceed to install the SublimeLinter-contrib-bandit plugin if it is not yet installed.
+Once you have installed and configured `bandit`, you can proceed to install the SublimeLinter-bandit plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
@@ -33,12 +33,12 @@ To install via Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-1. When the plugin list appears, type `bandit`. Among the entries you should see `SublimeLinter-contrib-bandit`. If that entry is not highlighted, use the keyboard or mouse to select it.
+1. When the plugin list appears, type `bandit`. Among the entries you should see `SublimeLinter-bandit`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-bandit provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
+In addition to the standard SublimeLinter settings, SublimeLinter-bandit provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
 
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
