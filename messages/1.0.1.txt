@@ -1,0 +1,7 @@
+SublimeLinter-bandit
+--------------------
+
+Inline settings will be deprecated in SublimeLinter 4. Please use bandit's
+configuration features of instead.
+
+https://github.com/SublimeLinter/SublimeLinter3/blob/next/messages/4.0.0-rc.1.txt
