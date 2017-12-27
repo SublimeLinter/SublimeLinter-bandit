@@ -4,7 +4,7 @@ SublimeLinter-bandit
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [bandit](https://wiki.openstack.org/wiki/Security/Projects/Bandit). It will be used with files that have the “python” syntax.
 
 ## Installation
-SublimeLinter 3 must be installed in order to use this plugin. 
+SublimeLinter must be installed in order to use this plugin. 
 
 Please use [Package Control](https://packagecontrol.io) to install the linter plugin.
 
