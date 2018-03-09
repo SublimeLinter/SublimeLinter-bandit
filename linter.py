@@ -23,7 +23,7 @@ class Bandit(PythonLinter):
     version_re = r'^bandit\s(?P<version>\d+.\d+.\d+)'
     version_requirement = '>= 1.3.0'
     regex = (
-        r'^>>\sIssue:\s\[.+\]\s(?P<message>.+)$\r?\n'
+        r'^>>\sIssue:\s\[(?P<code>[B]\d+):.+\]\s(?P<message>.+)$\r?\n'
         r'^.*Severity:\s(?:(?P<error>High)|(?P<warning>(Medium|Low))).*$\r?\n'
         r'^.*Location:.*:(?P<line>\d+)$\r?\n'
     )
