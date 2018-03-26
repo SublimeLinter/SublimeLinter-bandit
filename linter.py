@@ -11,5 +11,7 @@ class Bandit(PythonLinter):
     multiline = True
     error_stream = util.STREAM_BOTH
     defaults = {
-        'selector': 'source.python'
+        'selector': 'source.python',
+        '--tests,': '',
+        '--skips,': ''
     }
