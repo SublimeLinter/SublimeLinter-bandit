@@ -2,7 +2,7 @@ from SublimeLinter.lint import PythonLinter, util
 
 
 class Bandit(PythonLinter):
-    cmd = ('bandit@python', '${args}', '-n', '1', '-f', 'txt', '-')
+    cmd = ('bandit', '${args}', '-n', '1', '-f', 'txt', '-')
     regex = (
         r'^>>\sIssue:\s\[(?P<code>[B]\d+):.+\]\s(?P<message>.+)$\r?\n'
         r'^.*Severity:\s(?:(?P<error>High)|(?P<warning>(Medium|Low))).*$\r?\n'
