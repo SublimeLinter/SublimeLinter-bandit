@@ -18,7 +18,7 @@ Before using this plugin, you must ensure that `bandit` (1.3.0 or later) is inst
    ```
 
 
-In order for `bandit` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable).
+In order for `bandit` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.com/en/latest/troubleshooting.html#finding-a-linter-executable).
 
 
 ## Settings
