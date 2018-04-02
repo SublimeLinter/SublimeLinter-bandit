@@ -1,14 +1,15 @@
 SublimeLinter-bandit
 ====================
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [bandit](https://wiki.openstack.org/wiki/Security/Projects/Bandit). It will be used with files that have the “python” syntax.
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [bandit](https://wiki.openstack.org/wiki/Security/Projects/Bandit).
+It will be used with files that have the "python" syntax.
 
 ## Installation
 SublimeLinter must be installed in order to use this plugin. 
 
 Please use [Package Control](https://packagecontrol.io) to install the linter plugin.
 
-Before using this plugin, you must ensure that `bandit` (1.3.0 or later) is installed on your system:
+Before using this plugin, ensure that `bandit` (1.3.0 or later) is installed on your system:
 
 1. Install [Python](http://python.org/download/) and [pip](http://www.pip-installer.org/en/latest/installing.html).
 
@@ -18,14 +19,15 @@ Before using this plugin, you must ensure that `bandit` (1.3.0 or later) is inst
    ```
 
 
-In order for `bandit` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.com/en/latest/troubleshooting.html#finding-a-linter-executable).
+Please make sure that the path to `bandit` is available to SublimeLinter.
+The docs cover [troubleshooting PATH configuration](http://sublimelinter.com/en/latest/troubleshooting.html#finding-a-linter-executable).
 
 
 ## Settings
 - SublimeLinter settings: http://sublimelinter.com/en/latest/settings.html
 - Linter settings: http://sublimelinter.com/en/latest/linter_settings.html
 
-Additional settings for `bandit`:
+Additional settings for SublimeLinter-bandit:
 
 - `tests`: comma-separated list of test IDs to run
 - `skips`: comma-separated list of test IDs to skip
