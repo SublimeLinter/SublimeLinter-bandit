@@ -1,7 +1,7 @@
 SublimeLinter-bandit
 ====================
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [bandit](https://wiki.openstack.org/wiki/Security/Projects/Bandit).
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [bandit](https://bandit.readthedocs.io/).
 It will be used with files that have the "python" syntax.
 
 ## Installation
